@@ -50,5 +50,16 @@ pip install django-bootstrap-v5
 
 ```
 
+
+### Comandos para criar arquivo do Banco de Dados
+ ```
+    python3 manage.py makemigrations
+ ```
+
+### Comandos para enviar para  Banco de Dados
+ ```
+    python3 manage.py migrate
+ ```
+
 video explicando upload imagens
 https://www.youtube.com/watch?v=uoiiwyemmvw
