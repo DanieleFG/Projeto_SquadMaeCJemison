@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Formulário de Notícias</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../static/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../static/css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 col-md-7 col-lg-8">
+      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h2 class="text-center">Formulário de Cadastro de Noticias</h2>
+      <p class="lead text-center">A notícia atualiza o público a respeito de fatos relevantes e contribui no acesso à informação.</p>
+    </div>
+{% load bootstrap5 %}   
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Preencha os dados da Notícia</h4>
+        {% if sucesso %}
+            <h3 class="alert alert-success">Cadastro efetuado com sucesso</h3>
+        {% else %}
+
+        <form class="needs-validation" method="POST" novalidate>
+            {% csrf_token %}
+            {% bootstrap_form form %}
+           
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Salvar</button>
+        </form>
+        {% endif %}
+      </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2024–2024 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">WomakersCode</a></li>
+      <li class="list-inline-item"><a href="#">Squad Mae C Jemilson</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer> 
+</div>
+
+
+    <script src="../static/bootstrap/bootstrap.bundle.min.js"></script>
+
+      <script src="../static/js/form-validation.js"></script>
+  </body>
+</html>

@@ -60,6 +60,10 @@ pip install django-bootstrap-v5
  ```
     python3 manage.py migrate
  ```
+### Comando aplicativo de Noticias
+```
+python3 manage.py startapp noticias
 
+```
 video explicando upload imagens
 https://www.youtube.com/watch?v=uoiiwyemmvw
