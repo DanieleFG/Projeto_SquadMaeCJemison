@@ -5,8 +5,8 @@ from noticias.models import Noticias
 class NoticiasForm(forms.ModelForm):
     texto = forms.CharField(widget=forms.Textarea)
     data = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))
-    # imagem = forms.
+    imagem = forms.ImageField()
     class Meta:
         model = Noticias
-        fields = ['cod_noticia', 'titulo', 'texto', 'autor', 'categoria', 'data']
+        fields = ['cod_noticia', 'titulo', 'texto', 'autor', 'categoria', 'data', 'imagem']
 

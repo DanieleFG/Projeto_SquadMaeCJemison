@@ -65,5 +65,10 @@ pip install django-bootstrap-v5
 python3 manage.py startapp noticias
 
 ```
+### Instalar biblioteca para lidar com imagem
+```
+ pip install pillow
+
+```
 video explicando upload imagens
 https://www.youtube.com/watch?v=uoiiwyemmvw

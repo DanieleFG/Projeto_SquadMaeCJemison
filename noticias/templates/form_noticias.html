@@ -51,7 +51,7 @@
             <h3 class="alert alert-success">Cadastro efetuado com sucesso</h3>
         {% else %}
 
-        <form class="needs-validation" method="POST" novalidate>
+        <form class="needs-validation" method="POST" novalidate enctype="multipart/form-data">
             {% csrf_token %}
             {% bootstrap_form form %}
            
